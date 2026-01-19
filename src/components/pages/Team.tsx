@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
+import leaderImg from "../../assets/jaypal.jpeg";
 
 function MemberCard({ children, index }: { children: React.ReactNode; index: number }) {
   const ref = useRef(null);
@@ -79,7 +80,11 @@ export function Team() {
           <div className="grid grid-cols-12 gap-6 sm:gap-10">
             <div className="col-span-12 lg:col-span-4">
               <div className="bg-slate-100 border border-slate-200 aspect-[3/4] flex items-center justify-center mb-4">
-                <User className="w-16 h-16 sm:w-20 sm:h-20 text-slate-400" />
+                <img
+                  src={leaderImg}
+                  alt={leadership.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 

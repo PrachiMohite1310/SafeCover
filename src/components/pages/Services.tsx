@@ -88,7 +88,7 @@ export function Services() {
       <section className="bg-[#003557] text-white" style={{ minHeight: '25vh' }}>
         <div className="max-w-[1800px] mx-auto px-4 sm:px-8 py-6 sm:py-10 flex items-center" style={{ minHeight: '25vh' }}>
           <div>
-            <h1 className="text-white mb-3">Our Services</h1>
+            <h1 className="text-white mb-3 text-3xl sm:text-4xl md:text-5xl font-bold">Our Services</h1>
             <p className="text-white/80 text-base sm:text-lg max-w-3xl leading-relaxed">
               Comprehensive insurance solutions for individuals and businesses. Expert advisory across personal and corporate insurance needs.
             </p>
