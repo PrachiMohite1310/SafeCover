@@ -4,6 +4,8 @@ import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import { ImageWithFallback } from '../figma/ImageWithFallback';
 import leaderImg from "../../assets/jaypal.jpeg";
+import jyotiImg from "../../assets/jyoti.png";
+import sachinImg from "../../assets/sachin.jpeg";
 
 function MemberCard({ children, index }: { children: React.ReactNode; index: number }) {
   const ref = useRef(null);
@@ -37,6 +39,7 @@ export function Team() {
       credentials: 'BDS',
       role: 'Board Member',
       expertise: 'Healthcare & Medical Insurance',
+      photo: jyotiImg,
     },
     {
       name: 'Dr. Karishma Sankpal',
@@ -49,6 +52,7 @@ export function Team() {
       credentials: 'BE (Mechanical)',
       role: 'Board Member',
       expertise: 'Industrial & Engineering Insurance',
+      photo: sachinImg,
     },
     {
       name: 'Shrishailya Mirajkar',
@@ -148,7 +152,15 @@ export function Team() {
                 <MemberCard index={index}>
                   <div className="bg-white border border-slate-200 hover:border-[#f5a623] transition-colors h-full">
                     <div className="bg-slate-100 border-b border-slate-200 aspect-square flex items-center justify-center">
-                      <User className="w-14 h-14 sm:w-16 sm:h-16 text-slate-400" />
+                      {member.photo ? (
+                        <img
+                          src={member.photo}
+                          alt={member.name}
+                          className="w-full h-full object-cover"
+                        />
+                      ) : (
+                        <User className="w-14 h-14 sm:w-16 sm:h-16 text-slate-400" />
+                      )}
                     </div>
                     <div className="p-4 sm:p-5">
                       <h3 className="text-[#003557] mb-1">{member.name}</h3>
