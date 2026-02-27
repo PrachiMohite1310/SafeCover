@@ -60,7 +60,7 @@ export function Clients() {
     { name: 'AMA Pvt Ltd', industry: 'Equipment Suppliers', logo: amaLogo },
     { name: 'Tanaji Group', industry: 'Construction Solutions' , logo: TGLogo},
     { name: 'Secura Force', industry: 'Security Services' , logo: SecuraLogo},
-    { name: 'Raj Interiors', industry: 'Hospitality Design' , logo: rajLogo},
+    { name: 'Raj Interios', industry: 'Hospitality Design' , logo: rajLogo},
     { name: 'Swapnashilp Buildcon', industry: 'Construction Services', logo: SPLogo },
     { name: 'SteadFast', industry: 'Security Services', logo: SFLogo },
     { name: 'SD Milkpro', industry: 'Milk Products Manufacturing', logo: SDmilkLogo },
