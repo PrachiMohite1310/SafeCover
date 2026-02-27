@@ -7,6 +7,7 @@ import leaderImg from "../../assets/jaypal.jpeg";
 import jyotiImg from "../../assets/jyoti.png";
 import sachinImg from "../../assets/sachin.jpeg";
 import KarishmaImg from "../../assets/karishma.jpeg";
+import sonaliImg from "../../assets/sonali.jpeg";
 
 function MemberCard({ children, index }: { children: React.ReactNode; index: number }) {
   const ref = useRef(null);
@@ -41,6 +42,15 @@ export function Team() {
       expertise: 'Healthcare & Medical Insurance',
       photo: jyotiImg,
     },
+
+    {
+      name: 'Sonali Deshmukh',
+      credentials: 'BSc',
+      role: 'Board Member',
+      expertise: 'Business Insurance',
+      photo: sonaliImg,
+    },
+
     {
       name: 'Dr. Karishma Sankpal',
       credentials: 'PT',
@@ -55,12 +65,7 @@ export function Team() {
       expertise: 'Industrial & Engineering Insurance',
       photo: sachinImg,
     },
-    {
-      name: 'Shrishailya Mirajkar',
-      credentials: 'BE (Civil), MBA',
-      role: 'Board Member',
-      expertise: 'Construction & Business Insurance',
-    },
+    
   ];
 
   return (
