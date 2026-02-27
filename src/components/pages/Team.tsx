@@ -6,6 +6,7 @@ import { ImageWithFallback } from '../figma/ImageWithFallback';
 import leaderImg from "../../assets/jaypal.jpeg";
 import jyotiImg from "../../assets/jyoti.png";
 import sachinImg from "../../assets/sachin.jpeg";
+import KarishmaImg from "../../assets/karishma.jpeg";
 
 function MemberCard({ children, index }: { children: React.ReactNode; index: number }) {
   const ref = useRef(null);
@@ -28,7 +29,6 @@ export function Team() {
   const leadership = {
     name: 'Jaypal Deshmukh',
     title: 'Founder Partner',
-    credentials: 'M.Com',
     experience: '17+ Years',
     bio: 'Jaypal Deshmukh brings over 17 years of extensive experience in insurance and financial services. As the founder of SafeCover Insurance Advisory, he specializes in policy selection, claim assistance, and providing expert guidance to clients across personal and business insurance needs. His client-first approach and deep industry knowledge have made SafeCover a trusted name in insurance advisory.',
   };
@@ -46,6 +46,7 @@ export function Team() {
       credentials: 'PT',
       role: 'Board Member',
       expertise: 'Healthcare Advisory',
+      photo: KarishmaImg,
     },
     {
       name: 'Sachin Deshmukh',
@@ -97,8 +98,6 @@ export function Team() {
                 <h3 className="text-[#003557] mb-2">{leadership.name}</h3>
                 <div className="flex flex-wrap items-center gap-3 sm:gap-4 mb-4">
                   <span className="text-[#f5a623] text-sm">{leadership.title}</span>
-                  <span className="text-slate-400">|</span>
-                  <span className="text-slate-600 text-sm">{leadership.credentials}</span>
                 </div>
                 
                 <div className="mb-4 pb-4 border-b border-slate-200">

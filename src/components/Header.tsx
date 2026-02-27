@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import logoImage from 'figma:asset/65cfb555df06c1c078c38fa676311a48acdaf3b6.png';
+import logoImage from '../assets/Safe_cover.png';
 
 export function Header() {
   const location = useLocation();

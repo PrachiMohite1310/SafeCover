@@ -1,6 +1,28 @@
 import { Link } from 'react-router-dom';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
+import iciciLogo from '../../assets/Tie_Ups/icici_lombard.png';
+import tataLogo from '../../assets/Tie_Ups/TATA_AIG_logo.png';
+import FGLogo from '../../assets/Tie_Ups/Future_gene.png';
+import hdfcLogo from '../../assets/Tie_Ups/hfc-ergo.jpg';
+import NivaLogo from '../../assets/Tie_Ups/niva-bupa.png';
+import RGILogo from '../../assets/Tie_Ups/reliance.webp';
+import bajajLogo from '../../assets/Tie_Ups/bajaj.avif';
+import CareHealthLogo from '../../assets/Tie_Ups/care_health.png';
+import nationalLogo from '../../assets/Tie_Ups/national-insurance.avif';
+import patankarLogo from '../../assets/Clients/patankar.png';
+import amaLogo from '../../assets/Clients/ama.jpg';
+import NPLogo from '../../assets/Clients/Newpower.png';
+import TGLogo from '../../assets/Clients/tanaji.jpg';
+import SecuraLogo from '../../assets/Clients/secura.jpg';
+import rajLogo from '../../assets/Clients/raj.jpg';
+import SPLogo from '../../assets/Clients/sp.jpg';
+import SFLogo from '../../assets/Clients/sf.jpg';
+import SDmilkLogo from '../../assets/Clients/milk.png';
+import TCLogo from '../../assets/Clients/tc.jpg';
+import APLogo from '../../assets/Clients/ap.jpg';
+import GCLogo from '../../assets/Clients/gc.png';
+
 
 function PartnerCard({ children, index }: { children: React.ReactNode; index: number }) {
   const ref = useRef(null);
@@ -21,30 +43,30 @@ function PartnerCard({ children, index }: { children: React.ReactNode; index: nu
 
 export function Clients() {
   const insurancePartners = [
-    { name: 'ICICI Lombard', category: 'General Insurance' },
-    { name: 'Tata AIG', category: 'General Insurance' },
-    { name: 'Future Generali', category: 'Life & General Insurance' },
-    { name: 'HDFC ERGO', category: 'General Insurance' },
-    { name: 'Niva Bupa', category: 'Health Insurance' },
-    { name: 'Reliance General Insurance', category: 'General Insurance' },
-    { name: 'Bajaj Allianz', category: 'Life & General Insurance' },
-    { name: 'Care Health Insurance', category: 'Health Insurance' },
-    { name: 'Star Health Insurance', category: 'Health Insurance' },
+    { name: 'ICICI Lombard', category: 'General Insurance', logo: iciciLogo },
+    { name: 'Tata AIG', category: 'General Insurance', logo: tataLogo },
+    { name: 'Future Generali', category: 'Life & General Insurance', logo: FGLogo },
+    { name: 'HDFC ERGO', category: 'General Insurance', logo: hdfcLogo },
+    { name: 'Niva Bupa', category: 'Health Insurance', logo: NivaLogo },
+    { name: 'Reliance General Insurance', category: 'General Insurance', logo: RGILogo },
+    { name: 'Bajaj Allianz', category: 'Life & General Insurance' , logo: bajajLogo },
+    { name: 'Care Health Insurance', category: 'Health Insurance' , logo: CareHealthLogo},
+    { name: 'National Insurance', category: 'Health Insurance', logo: nationalLogo },
   ];
 
   const clients = [
-    { name: 'TCS Limited', industry: 'Information Technology' },
-    { name: 'Infosys Technologies', industry: 'IT Services' },
-    { name: 'Larsen & Toubro', industry: 'Construction & Engineering' },
-    { name: 'Tata Motors', industry: 'Automotive Manufacturing' },
-    { name: 'Reliance Industries', industry: 'Conglomerate' },
-    { name: 'HDFC Bank', industry: 'Banking & Financial Services' },
-    { name: 'Asian Paints', industry: 'Manufacturing' },
-    { name: 'Dr. Reddy\'s Laboratories', industry: 'Pharmaceuticals' },
-    { name: 'Wipro Limited', industry: 'IT & Consulting' },
-    { name: 'Mahindra & Mahindra', industry: 'Automotive & Aerospace' },
-    { name: 'Sun Pharmaceutical', industry: 'Healthcare' },
-    { name: 'Tech Mahindra', industry: 'Technology Services' },
+    { name: 'Patankar Creative', industry: 'Turnkey Projects', logo: patankarLogo },
+    { name: 'New Power', industry: 'Contracting Firm', logo: NPLogo },
+    { name: 'AMA Pvt Ltd', industry: 'Equipment Suppliers', logo: amaLogo },
+    { name: 'Tanaji Group', industry: 'Construction Solutions' , logo: TGLogo},
+    { name: 'Secura Force', industry: 'Security Services' , logo: SecuraLogo},
+    { name: 'Raj Interiors', industry: 'Hospitality Design' , logo: rajLogo},
+    { name: 'Swapnashilp Buildcon', industry: 'Construction Services', logo: SPLogo },
+    { name: 'SteadFast', industry: 'Security Services', logo: SFLogo },
+    { name: 'SD Milkpro', industry: 'Milk Products Manufacturing', logo: SDmilkLogo },
+    { name: 'A P Assosiates', industry: 'Construction Management', logo: APLogo },
+    { name: 'Texture Concepts', industry: 'Paintin and Texture Specialists', logo: TCLogo },
+    { name: 'Gurukrupa Construction', industry: 'Real Estate Builders', logo: GCLogo },
   ];
 
   return (
@@ -81,8 +103,13 @@ export function Clients() {
                   <div className="bg-slate-50 border border-slate-200 p-5 sm:p-6 hover:border-[#f5a623] transition-colors h-full">
                     <div className="bg-white border border-slate-200 aspect-square flex items-center justify-center mb-4">
                       <div className="text-center p-4">
-                        <div className="w-12 h-12 bg-[#003557] mx-auto mb-3"></div>
-                        <div className="text-slate-400 text-xs uppercase tracking-wider">Logo Placeholder</div>
+                       <div className="bg-white border border-slate-200 aspect-square flex items-center justify-center mb-4 p-4">
+                        <img
+                          src={partner.logo}
+                          alt={partner.name}
+                          className="max-h-full max-w-full object-contain"
+                        />
+                      </div>
                       </div>
                     </div>
                     <h3 className="text-[#003557] mb-2 text-center text-sm">{partner.name}</h3>
@@ -115,8 +142,13 @@ export function Clients() {
                   <div className="bg-slate-50 border border-slate-200 p-5 sm:p-6 hover:border-[#f5a623] transition-colors h-full">
                     <div className="bg-white border border-slate-200 aspect-square flex items-center justify-center mb-4">
                       <div className="text-center p-4">
-                        <div className="w-12 h-12 bg-[#003557] mx-auto mb-3"></div>
-                        <div className="text-slate-400 text-xs uppercase tracking-wider">Logo Placeholder</div>
+                        <div className="bg-white border border-slate-200 aspect-square flex items-center justify-center mb-4 p-4">
+                        <img
+                          src={client.logo}
+                          alt={client.name}
+                          className="max-h-full max-w-full object-contain"
+                        />
+                      </div>
                       </div>
                     </div>
                     <h3 className="text-[#003557] mb-2 text-center text-sm">{client.name}</h3>

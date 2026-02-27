@@ -58,7 +58,7 @@ export function Contact() {
   const offices = [
     {
       city: 'Pune Office',
-      address: 'Office No. 506, 5th Floor, Bhosale Shine Arcade, Deccan, Pune – 411004',
+      address: 'Office No. B-301, Ujwal Serene S.No. 273/1, Baner Road, Pune, Maharashtra - 411045',
     },
     {
       city: 'Mumbai Office',

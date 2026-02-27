@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Shield, Users, HeadphonesIcon, ArrowRight, CheckCircle } from 'lucide-react';
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
-import logoImage from 'figma:asset/65cfb555df06c1c078c38fa676311a48acdaf3b6.png';
+import logoImage from '../../assets/building.jpeg';
 
 function AnimatedCard({ children, index }: { children: React.ReactNode; index: number }) {
   const ref = useRef(null);
