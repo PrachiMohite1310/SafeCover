@@ -15,7 +15,7 @@ import amaLogo from '../../assets/Clients/ama.jpg';
 import NPLogo from '../../assets/Clients/Newpower.png';
 import TGLogo from '../../assets/Clients/tanaji.jpg';
 import SecuraLogo from '../../assets/Clients/secura.jpg';
-import rajLogo from '../../assets/Clients/raj.jpg';
+import rajLogo from '../../assets/Clients/Raj.jpg';
 import SPLogo from '../../assets/Clients/sp.jpg';
 import SFLogo from '../../assets/Clients/sf.jpg';
 import SDmilkLogo from '../../assets/Clients/milk.png';
