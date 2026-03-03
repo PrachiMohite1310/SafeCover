@@ -18,9 +18,9 @@ export function Footer() {
 
           {/* Legal */}
           <div className="flex flex-col md:flex-row items-center gap-4 text-slate-400 text-sm">
-            <p>© 2024 SafeCover Insurance Advisory. All rights reserved.</p>
-            <span className="hidden md:block">|</span>
-            <p>Licensed in all 50 states | A.M. Best Rated Carriers</p>
+           <p>
+            © {new Date().getFullYear()} SafeCover Insurance Advisory. All rights reserved. | Helping you compare insurance plans with confidence.
+          </p>
           </div>
         </div>
       </div>
